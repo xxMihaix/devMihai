@@ -141,7 +141,7 @@ p{
 
 #hero{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center ;
     align-items: center;
@@ -496,12 +496,12 @@ p{
     max-width: 1180px;
     width: 100%;
     position: relative;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 @media(max-width: 1200px){
     #wrapper{
-        max-width: 899px;
+        max-width: 890px;
     }
     #cont{
         gap: 0px;
@@ -538,7 +538,7 @@ p{
 }
 
 #wrapper i:first-child{
-    left: 2px;
+    left: -5px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -567,12 +567,11 @@ p{
 }
 
 #carousel{
-    padding: 10px;
+    padding: 0px;
 }
 
 #carousel.dragging {
   cursor: grabbing;
-  user-select: none;
 }
 
 .img-container{
@@ -597,152 +596,7 @@ p{
     width: 110px;
     cursor: pointer;
 }
-
-#wrapper-languages span{
-    margin-left: 10px;
-}
-
-#spec{
-    margin-right: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/************  ANIMATION  **************/
-/*
-.wrapper{
-    margin-top: 40px;
-    width: 95%;
-    max-width: 1500px;
-    margin-inline: auto;
-    position: relative;
-    height: 104px;
-    overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 20%,
-        rgba(0, 0, 0, 1) 80%,
-        rgba(0, 0, 0, 0),
-    )
-}
-
-@keyframes scrollLeft {
-    to{
-        left: -200px;
-    }
-}
-
-.item{
-    flex: 0 0 auto;
-    width: 150px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-    background-color: transparent;
-    border-radius: 5px;
-    position: absolute;
-    left: 100%;
-    animation-name: scrollLeft;
-    animation: 30s linear infinite;
-}
-
-
-.item1 {
-    animation-delay: calc(30s / 8 * (8 - 1) * -1);
-}
-
-.item2 {
-    animation-delay: calc(30s / 8 * (8 - 2) * -1);
-}
-
-.item3 {
-    animation-delay: calc(30s / 8 * (8 - 3) * -1);
-}
-
-.item4 {
-    animation-delay: calc(30s / 8 * (8 - 4) * -1);
-}
-
-.item5 {
-    animation-delay: calc(30s / 8 * (8 - 5) * -1);
-}
-
-.item6 {
-    animation-delay: calc(30s / 8 * (8 - 6) * -1);
-}
-
-.item7 {
-    animation-delay: calc(30s / 8 * (8 - 7) * -1);
-}
-
-.item8 {
-    animation-delay: calc(30s / 8 * (8 - 8) * -1);
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/***************  p  *******************/
 
 .p{
     font-size: 30px;
@@ -752,3 +606,58 @@ p{
     margin: 0px;
     width: auto;
 }
+
+/***************  My Projects  *******************/
+
+#projects-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media(min-width: 600px){
+    #projects-title{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************    *******************/
