@@ -9,7 +9,8 @@
 html, body{
     margin: 0px;
     padding: 0px;
-    font-family: poppins
+    font-family: poppins;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -141,7 +142,7 @@ p{
 
 #hero{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center ;
     align-items: center;
@@ -466,6 +467,20 @@ p{
 }
 
 
+
+.nv-btn{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nv-btn span{
+    font-size:22px;
+}
+
 /****************  Languages  *********************/
 
 #cont{
@@ -662,7 +677,12 @@ p{
     display: flex;
     flex-direction: column;
     gap: 500px;
+}
 
+@media(max-width: 480px){
+    #contact-container{
+         padding: 5%;
+    }
 }
 
 #contact-container label{
@@ -710,10 +730,23 @@ p{
     font-size: 18px;
     padding: 7px 22px;
     border-radius: 999px;
+    cursor: pointer;
 }
 
 .name{
     margin-bottom: 7px;
+}
+
+@media( 500px < width < 1200px){
+    #contact-container{
+        max-width: 850px;
+    }
+}
+
+@media( 600px < width < 800px){
+    #contact-container{
+        max-width: 600px;
+    }
 }
 
 /*****************  Footer  *******************/
@@ -741,32 +774,4 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***************    *******************/
+/**********************************/
