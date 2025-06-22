@@ -626,6 +626,115 @@ p{
 
 
 
+/***************  Contact Me  *******************/
+
+#all-contact-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 3%;
+}
+
+#contact-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media(min-width: 600px){
+    #contact-title{
+        margin-top: 40px;
+    }
+}
+
+#contact-container{
+    max-width: 1100px;
+    border-radius: 20px;
+    border: 3px solid purple;
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 500px;
+
+}
+
+#contact-container label{
+    color: white;
+    font-weight: bold;
+}
+
+#contact-container input{
+    border-radius: 10px;
+    border: none;
+}
+
+#contact-container input:focus{
+    outline: none;
+    border: 3px solid white;
+    transition: 0.1s;
+}
+
+#contact-container textarea{
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 17px;
+    height: 400px;
+    padding: 5px;
+}
+
+#contact-container textarea:focus{
+    outline: none;
+    border: 3px solid white;
+    transition: 0.1s;
+}
+
+#submit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#submit{
+    background: rgb(143, 4, 143);
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 7px 22px;
+    border-radius: 999px;
+}
+
+.name{
+    margin-bottom: 7px;
+}
+
+/*****************  Footer  *******************/
+
+
+footer{
+    background-color: rgb(143, 4, 143);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 20px;
+}
+
 
 
 
