@@ -9,7 +9,7 @@
 html, body{
     margin: 0px;
     padding: 0px;
-    font-family: poppins
+    font-family: poppins;
 }
 
 body{
@@ -102,6 +102,20 @@ p{
     filter: invert(1);
     height: 45px;
     cursor: pointer;
+}
+
+
+.nv-btn{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nv-btn span{
+    font-size:22px;
 }
 
 

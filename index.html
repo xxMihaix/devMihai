@@ -16,10 +16,10 @@
             <p id="logo1">dev<span id="logo2">Mihai</span></p>
         </div>
         <ul>
-            <li><button class="nv-btn">Home</button></li>
-            <li><button class="nv-btn">Languages</button></li>
-            <li><button class="nv-btn"><span style="color: rgb(184, 13, 184)">Projects</span></button></li>
-            <li><button class="nv-btn">Contact</button></li>
+            <li><button class="nv-btn" data-target="hero">Home</button></li>
+            <li><button class="nv-btn" data-target="cont">Languages</button></li>
+            <li><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(184, 13, 184)">Projects</span></button></li>
+            <li><button class="nv-btn" data-target="all-contact-container">Contact</button></li>
         </ul>
     </div>
     <div id="mobile-navbar">
@@ -74,10 +74,10 @@
     </div>
 
     <div id="dropdown-container">
-        <div class="el"><button class="nv-btn">Home</button></div>
-        <div class="el"><button class="nv-btn">Languages</button></div>
-        <div class="el"><button class="nv-btn"><span style="color: rgb(184, 13, 184)">Projects</span></button></div>
-        <div class="el"><button class="nv-btn">Contact</button></div>
+        <div class="el"><button class="nv-btn" data-target="hero">Home</button></div>
+        <div class="el"><button class="nv-btn" data-target="cont">Languages</button></div>
+        <div class="el"><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(184, 13, 184)">Projects</span></button></div>
+        <div class="el"><button class="nv-btn" data-target="all-contact-container">Contact</button></div>
     </div>
 
     <div class="wrapper">
@@ -91,7 +91,7 @@
         <div class="item item8">#Engineer</div>
     </div>
 
-    <div id="cont">
+    <div id="cont" class="hidden">
   <p id="languages">Languages:</p>
   <div id="wrapper">
     <i id="leftBtn" class="fa-solid fa-angle-left"></i>
@@ -141,7 +141,7 @@
   </div>
 </div>
 
-<div id="all-projects-container">
+<div id="all-projects-container" class="hidden">
   <p id="projects-title">My Projects(soon):</p>
   <div id="projects-container">
     <!--Content Projects-->
@@ -151,7 +151,7 @@
 
 <!-- CONTACT -->
 
-<div id="all-contact-container">
+<div id="all-contact-container" class="hidden">
   <p id="contact-title">Contact Me:</p>
   <div id="contact-container">
     <!--Content Projects-->
@@ -187,6 +187,7 @@
         <p class="p">Date: 16.06.2025</p><br><br><br><br><br><br><br>-->
 
     <script src="action.js" defer></script>
+    <!--<script src="animation.js" defer></script>-->
 
     <br><br>
     <footer>

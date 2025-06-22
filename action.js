@@ -41,6 +41,45 @@ btnLeft.addEventListener('click', () => {
   container.scrollTo({ left: scrollTargetX, behavior: 'smooth'});
 })
 
+//  Buttons
+
+const buttons = document.querySelectorAll('.nv-btn');
+
+buttons.forEach((button) => {
+  button.addEventListener('click', function() {
+    const target = button.dataset.target;
+    const targetElement = document.getElementById(target);
+
+    if(targetElement){
+      const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset -100;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth'});
+    }
+
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
