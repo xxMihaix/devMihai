@@ -611,6 +611,25 @@ p{
     width: 110px;
     cursor: pointer;
 }
+
+.description{
+    text-align: center;
+}
+
+@media(max-width: 360px){
+    .description{
+        font-size: 15px;
+    }
+    .card{
+        padding: 15px;
+        max-width: 270px;
+    }
+    #wrapper{
+        transform: scale(0.93)
+    }
+}
+
+
 /***************  p  *******************/
 
 .p{
