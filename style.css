@@ -642,7 +642,7 @@ p{
 }
 
 /***************  My Projects  *******************/
-
+/*
 #projects-title{
     font-size: 30px;
     font-weight: bold;
@@ -656,6 +656,139 @@ p{
         margin-top: 40px;
     }
 }
+
+.all-project{
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: red;
+}
+
+#projects-container{
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media(max-width: 700px){
+    #projects-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.project-container{
+    max-width: 1100px;
+    min-width: 100%;
+    height: auto;
+    min-height: 100px;
+    border: 3px solid rgb(147, 0, 147);
+    border-radius: 17px;
+}
+
+.project-title{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 35px;
+}
+*/
+
+#all-projects-container{
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#project-title{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#content-pr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 25px;
+}
+
+@media(max-width: 700px){
+    #content-pr{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+.els{
+    max-width: 1100px;
+    width: 100%;
+}
+
+.tit{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 7%;
+}
+
+.conn{
+    border-radius: 17px;
+    border: 3px solid rgb(150, 1, 150);
+    padding: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -677,13 +810,13 @@ p{
     font-size: 30px;
     font-weight: bold;
     color: white;
-    margin-top: 20px;
+    margin-top: 17px;
     text-align: center;
 }
 
 @media(min-width: 600px){
     #contact-title{
-        margin-top: 40px;
+        margin-top: 20px;
     }
 }
 
