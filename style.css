@@ -768,6 +768,12 @@ p{
     }
 }
 
+@media(min-width: 800px) {
+    #all-contact-container{
+        padding: 10%;
+    }
+}
+
 /*****************  Footer  *******************/
 
 
@@ -784,7 +790,13 @@ footer{
     flex-direction: column;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    padding: 20px;
+    padding: 22px;
+}
+
+@media(max-width: 380px){
+    footer{
+        padding: 35px;
+    }
 }
 
 
