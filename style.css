@@ -770,7 +770,10 @@ p{
 
 @media(min-width: 800px) {
     #all-contact-container{
-        padding: 10%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -798,8 +801,6 @@ footer{
         padding: 35px;
     }
 }
-
-
 
 
 
