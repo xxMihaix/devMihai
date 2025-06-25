@@ -58,6 +58,17 @@ buttons.forEach((button) => {
   })
 })
 
+/////////////////////////////////////////
+
+document.getElementById('ePlantsSite').addEventListener('click', function(){
+  window.location.href = 'https://eplants.mihaii.com/';
+})
+
+document.getElementById('ProfinexSite').addEventListener('click', function(){
+  window.location.href = 'https://profinex.mihaii.com/';
+})
+
+
 
 
 
