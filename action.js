@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 const container = document.getElementById('carousel');
 let scrollTargetX = container.scrollLeft;
-const scrollStep = 286;
+const scrollStep = 288; /*286 */
 
 function clampScroll(value){
   const maxScroll = container.scrollWidth - container.clientWidth;

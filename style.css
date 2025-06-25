@@ -503,7 +503,6 @@ p{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) -12px);
-    gap: 16px;
     overflow: hidden;
 }
 
@@ -553,7 +552,7 @@ p{
 }
 
 #wrapper i:first-child{
-    left: -5px;
+    left: 0px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -566,6 +565,8 @@ p{
 
 .card{
     padding: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 #carousel .card{
