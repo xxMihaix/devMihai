@@ -154,6 +154,13 @@ p{
     background-size: 100% 20%, cover, cover;
 }
 
+@media(min-width: 1100px){
+    #hero{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
 @media(max-width: 750px){
     #hero{
     background: url(Images/bg3.png), url(Images/back.png), url(Images/rea1.jpg);/*, url(Images/bg-bottom-hero.png);*/
@@ -236,19 +243,25 @@ p{
     cursor: pointer;
 }
 
-#btn1{
+#btn1, #brn3{
     background-color: rgb(164, 13, 164);
     border: none;
     color: white;
 }
 
-#btn2{
+#btn2, #btn4{
     background-color: transparent;
     color: white;
     border: 3px solid rgb(164, 13, 164);
 }
 
 #btn2:hover{
+    background-color: rgb(164, 13, 164);
+    border: 3px solid rgb(164, 13, 164);
+    transition: 0.5s;
+}
+
+#btn4:hover{
     background-color: rgb(164, 13, 164);
     border: 3px solid rgb(164, 13, 164);
     transition: 0.5s;
@@ -898,12 +911,12 @@ p{
 }
 
 #ProfinexImg {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
   opacity: 1;
 }
 
 #ePlantsImg {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
   opacity: 1;
 }
 

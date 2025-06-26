@@ -58,6 +58,30 @@ buttons.forEach((button) => {
   })
 })
 
+let btn1 = [
+  document.getElementById('btn1'),
+  document.getElementById('btn3')
+]
+
+let btn2 = [
+  document.getElementById('btn2'),
+  document.getElementById('btn4')
+]
+
+btn1.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const offset = document.getElementById('all-projects-container').getBoundingClientRect().top + window.pageYOffset -100;
+    window.scrollTo({ top: offset, behavior: 'smooth'});
+  })
+})
+
+btn2.forEach(btn => {
+  btn.addEventListener('click', function(){
+    const offset2 = document.getElementById('all-contact-container').getBoundingClientRect().top + window.pageYOffset -100;
+    window.scrollTo({ top: offset2, behavior:'smooth' })
+  })
+})
+
 /////////////////////////////////////////
 
 document.getElementById('btnn1').addEventListener('click', function() {
@@ -92,6 +116,7 @@ document.getElementById('ProfinexSite').addEventListener('click', function(){
 
 ////////////////////////////////////////
 
+document.addEventListener('DOMContentLoaded', function(){
 
 const left0 = document.getElementById('left0');
 const right0 = document.getElementById('right0');
@@ -157,7 +182,7 @@ right.addEventListener('click', function() {
     display2.src = images[curentIndex];
 
     display2.style.opacity = '1';
-  }, 300);
+  }, 400);
 })
 
 left.addEventListener('click', function() {
@@ -169,9 +194,11 @@ left.addEventListener('click', function() {
     display2.src = images[curentIndex];
 
     display2.style.opacity = '1';
-  }, 300);
+  }, 400);
 })
 
+
+})
 
 
 
