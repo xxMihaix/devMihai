@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 const container = document.getElementById('carousel');
 let scrollTargetX = container.scrollLeft;
-const scrollStep = 288; /*286 */
+const scrollStep = 287; /*286 */
 
 function clampScroll(value){
   const maxScroll = container.scrollWidth - container.clientWidth;
@@ -97,10 +97,22 @@ document.getElementById('btnn3').addEventListener('click', function() {
 })
 
 document.getElementById('btnn4').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/PHP';
+  window.location.href = 'https://en.wikipedia.org/wiki/Node.js';
 })
 
 document.getElementById('btnn5').addEventListener('click', function() {
+  window.location.href = 'https://en.wikipedia.org/wiki/Express.js';
+})
+
+document.getElementById('btnn6').addEventListener('click', function() {
+  window.location.href = 'https://en.wikipedia.org/wiki/MongoDB';
+})
+
+document.getElementById('btnn7').addEventListener('click', function() {
+  window.location.href = 'https://en.wikipedia.org/wiki/PHP';
+})
+
+document.getElementById('btnn8').addEventListener('click', function() {
   window.location.href = 'https://en.wikipedia.org/wiki/MySQL';
 })
 
