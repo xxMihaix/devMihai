@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I'm Mihai! I build modern websites using HTML, CSS, and JavaScript. Explore my projects, experiments, and tutorials about web development.">
+    <!-- Keywords (not crucial, but can help a bit) -->
+    <meta name="keywords" content="web development, web developer, html, css, javascript, projects, portfolio, front-end, programming">
+    <!-- Author -->
+    <meta name="author" content="Mihai">
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="DevMihai - Web Developer Portfolio">
+    <meta property="og:description" content="Discover my projects and tutorials about HTML, CSS, and JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xxmihaix.github.io/devMihai">
+    <meta property="og:image" content="https://xxmihaix.github.io/devMihai/preview.png">
+
+    <title>devMihai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6QFKR1NJP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-F6QFKR1NJP');
+    </script>
+
+    <div id="pc-navbar">
+        <div id="logo-container">
+            <p id="logo1">dev<span id="logo2">Mihai</span></p>
+        </div>
+        <ul>
+            <li><button class="nv-btn" data-target="inv-nav1">Home</button></li>
+            <li><button class="nv-btn" data-target="cont">Languages</button></li>
+            <li><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(184, 13, 184)">Projects</span></button></li>
+            <li><button class="nv-btn" data-target="all-contact-container">Contact</button></li>
+        </ul>
+    </div>
+    <div id="mobile-navbar">
+        <div id="logo-container">
+            <p id="logo1">dev<span id="logo2">Mihai</span></p>
+        </div>
+        <img src="Images/menu.svg" id="menu">
+    </div>
+    
+    <!--PC-->
+    <div id="pc-hero" >
+        <div id="inv-nav1" class="inv-nav"></div>
+        <div id="hero">
+        <!-- HERO 1 -->
+        <div id="text-hero" class="hero-el"><p id="text-hero1" class="hero-text">Hello, I’m <span id="mihai" class="purple">Mihai</span></p>
+            <!--<div class="container">
+                <span class="text first-tect">I'm a</span>
+            </div>-->
+            <p id="text-hero2" class="hero-text">I build complete websites – from design and structure to domain setup and online launch, managing every detail to ensure a smooth and professional online presence.</p>
+            <div id="btn-container">
+                <button class="btn" id="btn1">My Projects</button>
+                <button class="btn" id="btn2">Contact Me</button>
+            </div>
+        </div>
+        <!-- HERO 2 -->
+        <div id="video-container" class="hero-el">
+            <video autoplay muted loop id="video">
+                <source src="Images/Vdeeo.mp4"></source>
+            </video>
+        </div>
+    </div>
+    </div>
+
+    <div id="mobile-hero" >
+        <div id='inv-nav2' class="inv-nav"></div>
+        <div id="hero">
+        <!-- HERO 1 -->
+        <div id="text-hero" class="hero-el"><p id="text-hero1" class="hero-text">Hello, I’m <span id="mihai" class="purple">Mihai</span></p>
+            <p id="text-hero2" class="hero-text">I build complete websites – from design and structure to domain setup and online launch, managing every detail to ensure a smooth and professional online presence.</p>
+        </div>
+        <!-- HERO 2 -->
+        <div id="video-container" class="hero-el">
+            <video autoplay muted loop id="video">
+                <source src="Images/Vdeeo.mp4"></source>
+            </video>
+        </div>
+        <div id="btn-container">
+                <button class="btn" id="btn3">My Projects</button>
+                <button class="btn" id="btn4">Contact Me</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="dropdown-container">
+        <div class="el"><button class="nv-btn" data-target="mobile-hero">Home</button></div>
+        <div class="el"><button class="nv-btn" data-target="cont">Languages</button></div>
+        <div class="el"><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(184, 13, 184)">Projects</span></button></div>
+        <div class="el"><button class="nv-btn" data-target="all-contact-container">Contact</button></div>
+    </div>
+
+    <div class="wrapper">
+        <div class="item item1">#Mihai</div>
+        <div class="item item2">#Designer</div>
+        <div class="item item3">#Frontend</div>
+        <div class="item item4">#Developer</div>
+        <div class="item item5">#Backend</div>
+        <div class="item item6">#Freelancer</div>
+        <div class="item item7">#Architect</div>
+        <div class="item item8">#Engineer</div>
+    </div>
+
+    <!--PC -->
+    <div class="aboutme-cont">
+      <p>About Me</p>
+      <div id="spec" class="aboutme-hov">
+        <div class="aboutme-cont">
+          <div class="text-about"><p>
+        My name is Mihai and I create complete websites - from design and structure to configuration and online launch. I believe that a successful website
+         should be both visually appealing and easy to use, which motivates me to offer personalized solutions for each project.
+        </p></div>
+        <div class="text-about"><p>
+I place great emphasis on communication and transparency, so that the final result reflects exactly what you want. Whether you need a presentation website,
+ an online store or a blog, I can help you have a professional and efficient digital presence.
+      </p></div>
+        </div>
+        <div class="aboutme-img">
+          <img src="Images/temp.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="aboutme-cont2">
+      <p>About Me</p>
+      <div id="spec" class="aboutme-hov2">
+        <div class="aboutme-cont2">
+          <div class="text-about2"><p>
+        My name is Mihai and I create complete websites - from design and structure to configuration and online launch. I believe that a successful website
+         should be both visually appealing and easy to use, which motivates me to offer personalized solutions for each project.
+        </p></div>
+        <div class="aboutme-img">
+          <img src="Images/temp.png">
+        </div>
+        <div class="text-about2"><p>
+I place great emphasis on communication and transparency, so that the final result reflects exactly what you want. Whether you need a presentation website,
+ an online store or a blog, I can help you have a professional and efficient digital presence.
+      </p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cont" class="hidden">
+  <p id="languages">Languages:</p>
+  <div id="wrapper">
+    <i id="leftBtn" class="fa-solid fa-angle-left"></i>
+    <ul id="carousel">
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/html.jpg" class="imagess" />
+        </div>
+        <p class="title">HTML</p>
+        <p class="description">It is the foundational language used to structure the content of a web page, defining elements such as headings, text, images, and links.</p>
+        <button id="btnn1">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/css.jpg" class="imagess" />
+        </div>
+        <p class="title">CSS</p>
+        <p class="description">It allows the styling of HTML elements and controls the visual appearance of the website, including colors, fonts, layout, and graphic effects.</p>
+        <button id="btnn2">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/js.jpg" class="imagess" />
+        </div>
+        <p class="title">JavaScript</p>
+        <p class="description">A programming language that adds interactivity to web pages, enabling dynamic actions and real-time content updates.</p>
+        <button id="btnn3">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/node.jpg" class="imagess" />
+        </div>
+        <p class="title">Node.js</p>
+        <p class="description">A runtime environment that allows JavaScript to run on the server side, enabling fast, scalable, and efficient backend development.</p>
+        <button id="btnn4">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/express.jpg" class="imagess" />
+        </div>
+        <p class="title">Express.js</p>
+        <p class="description">A lightweight web framework for Node.js that simplifies building APIs and server-side applications with powerful routing and middleware features.</p>
+        <button id="btnn5">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/mongodb.png" class="imagess" />
+        </div>
+        <p class="title">MongoDB</p>
+        <p class="description">A NoSQL database that stores data in flexible, JSON-like documents, making it easy to handle large, unstructured, and evolving datasets.</p>
+        <button id="btnn6">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/php.jpg" class="imagess" />
+        </div>
+        <p class="title">PHP</p>
+        <p class="description">A server-side language used for generating dynamic content and interacting with databases in web applications.</p>
+        <button id="btnn7">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/mysql.jpg" class="imagess" />
+        </div>
+        <p class="title">MySql</p>
+        <p class="description">A relational database management system used for efficiently storing and organizing a website’s data.</p>
+        <button id="btnn8">Info <span>↗</span></button>
+      </li>
+    </ul>
+    <i id="rightBtn" class="fa-solid fa-angle-right"></i>
+  </div>
+</div>
+
+<div class="wrapper">
+        <div class="item item1">#Mihai</div>
+        <div class="item item2">#Designer</div>
+        <div class="item item3">#Frontend</div>
+        <div class="item item4">#Developer</div>
+        <div class="item item5">#Backend</div>
+        <div class="item item6">#Freelancer</div>
+        <div class="item item7">#Architect</div>
+        <div class="item item8">#Engineer</div>
+    </div>
+
+<!--
+<div id="all-projects-container" class="hidden">
+  <p id="projects-title">My Projects:</p>
+  <div id="projects-container">
+    Content Projects
+    <div class="all-project">
+      <p class="project-title">ePlants</p>
+      <div class="project-container">
+
+      </div>
+    </div>
+
+    <div class="all-project">
+      <p class="project-title">Profinex</p>
+      <div class="project-container">
+        
+      </div>
+    </div>
+    </div>
+      
+
+    </div>
+</div>-->
+<!--
+    <div class="new-proj">
+      <p>New Project</p>
+      <div class="cont-proj">
+        <p>Something great is coming, a fun new website for everyone.</p>
+      </div>
+    </div>-->
+
+<div id="all-projects-container" class="hidden">
+  <p id="project-title">My Projects:</p>
+  <div id="content-pr">
+    <p class="comming">Something great is coming, a fun new website for everyone.</p>
+    <div class="els">
+      <p class="tit">ePlants</p>
+      <div class="conn">
+        <!-- To Build -->
+      
+        <!--------------------------->
+        <div class="img-cont">  
+          <i id="left0" class="fa-solid fa-angle-left"></i>
+          <img id="ePlantsImg" src="ProjectsJpg/ePlants/ePlants1.jpg" class="img">
+          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
+          <i id="right0" class="fa-solid fa-angle-right"></i>
+        </div>
+        <!--------------------------->
+        <div class="text-cont">
+          <div class="width-p">
+            <span class='des-title'>ePlants</span>
+            <p class="site-des">ePlants is made by devMihai and is a portfolio for all applications, from local JSON store to games like Guess the number or scroll animations.</p></div>
+          
+          <button id="ePlantsSite">Visit Site <span>↗</span></button>
+        </div>
+        <!--------------------------->
+      </div>
+    </div>
+
+    <div class="els">
+      <p class="tit">Profinex</p>
+      <div class="conn">
+        <!-- To Build -->
+        
+        <!--------------------------->
+        <div class="img-cont">  
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <img id='ProfinexImg' src="ProjectsJpg/Profinex/Profinex1.jpg" class="img">
+          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        <!--------------------------->
+        <div class="text-cont">
+          <div class="width-p">
+            <span class='des-title'>Profinex</span>
+            <p class="site-des">Profinex is a website created for a client with the aim of presenting the services provided in a modern way, but also an email for contact.</p></div>
+          
+          <button id="ProfinexSite">Visit Site <span>↗</span></button>
+        </div>
+        <!--------------------------->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- CONTACT -->
+
+<div id="all-contact-container" class="hidden">
+  <p id="contact-title">Contact Me:</p>
+  <div id="contact-container">
+    <!--Content Projects-->
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="049bd191-5a6d-4617-8e77-501a20a2e3c7">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <label class="name">Name:</label>
+    <input class="name" type="text" name="name" required><br>
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+    <textarea name="message" required placeholder="Message.."></textarea>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;"><br>
+
+    <!-- Custom Confirmation / Success Page -->
+    <input type="hidden" name="redirect" value="https://mihaii.com/send.html">
+
+    <div id="submit-container">
+      <button type="submit" id="submit">Submit Form</button>
+    </div>
+</form>
+  </div>
+</div>
+
+  <!--
+    <br><br><br><br><br><br><br>
+        <p class="p">Official site of dev<span style="color: rgb(184, 13, 184)">Mihai</span></p>
+        <p class="p">In work!</p>
+        <p class="p">Date: 16.06.2025</p><br><br><br><br><br><br><br>-->
+
+    <script src="action.js" defer></script>
+
+    <!--<script src="animation.js" defer></script>-->
+
+    <br><br>
+    <footer>
+      <p>© 2025 devMihai. All rights reserved.</p>
+    </footer>
+</body>
+</html>
