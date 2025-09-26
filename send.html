@@ -1,47 +1,62 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee & Tea</title>
-    <link rel="stylesheet" href="send.css">
-    <link rel="icon" href="images/round-logo.png">
-    <script src="go.js" defer></script>
+    <meta name="description" content="Hi, I'm Mihai! I build modern websites using HTML, CSS, and JavaScript. Explore my projects, experiments, and tutorials about web development.">
+    <!-- Keywords (not crucial, but can help a bit) -->
+    <meta name="keywords" content="web development, web developer, html, css, javascript, projects, portfolio, front-end, programming">
+    <!-- Author -->
+    <meta name="author" content="Mihai">
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="DevMihai - Web Developer Portfolio">
+    <meta property="og:description" content="Discover my projects and tutorials about HTML, CSS, and JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xxmihaix.github.io/devMihai">
+    <meta property="og:image" content="https://xxmihaix.github.io/devMihai/preview.png">
+
+    <title>devMihai</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
-<header>
-    <!-- Pc Navbar -->
-    <navbar class="navbar">
-        <p>Coffee & Tea</p>
-        <ul class="list">
-            <li><button>Acasa</button></li>
-            <li><button>Despre Noi</button></li>
-            <li><button>Produse</button></li>
-            <li><button>Contact</button></li>
-            <li><button><img src="images/cart.svg" class="cart-svg"></button></li>
-        </ul>
-    </navbar>
-    <!-- Mobile Navbar -->
-    <navbar class="navbar-mobile">
-        <p>Coffee & Tea</p>
-        <ul class="list">
-            <li><button><img src="images/cart.svg" class="cart-svg"></button></li>
-            <li><button id="open-menu"><img src="images/menu.svg" class="cart-svg"></button></li>
-        </ul>
-    </navbar>
-    
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="top-menu">Not Working!</div>
-        <ul class="content-menu">
-            <li><button>Acasa</button></li>
-            <li><button>Despre Noi</button></li>
-            <li><button>Produse</button></li>
-            <li><button>Contact</button></li>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6QFKR1NJP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-F6QFKR1NJP');
+    </script>
+
+    <div id="pc-navbar">
+        <div id="logo-container">
+            <p id="logo1">dev<span id="logo2">Mihai</span></p>
+        </div>
+        <ul>
+            <li><button class="nv-btn" data-target="inv-nav">Home</button></li>
+            <li><button class="nv-btn" data-target="cont">Languages</button></li>
+            <li><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(184, 13, 184)">Projects</span></button></li>
+            <li><button class="nv-btn" data-target="all-contact-container">Contact</button></li>
         </ul>
     </div>
-</header>
+    <div id="mobile-navbar">
+        <div id="logo-container">
+            <p id="logo1">dev<span id="logo2">Mihai</span></p>
+        </div>
+        <img src="Images/menu.svg" id="menu">
+    </div>
 
-<main>
+    <div id="dropdown-container">
+        <div class="el"><button class="nv-btn" data-target="inv-nav">Home</button></div>
+        <div class="el"><button class="nv-btn" data-target="cont">Languages</button></div>
+        <div class="el"><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(184, 13, 184)">Projects</span></button></div>
+        <div class="el"><button class="nv-btn" data-target="all-contact-container">Contact</button></div>
+    </div>
+
+    
     <div id="content">
 
         <svg id="img" width="100" height="100" class="text-green-500 dark:text-green-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,19 +64,30 @@
             </path>
         </svg>
 
-        <p id="p1">Formular trimis cu succes!</p>
-        <p id="p2">Vă mulțumim! Formularul a fost trimis cu succes. Vă vom răspunde în curând!</p>
+        <p id="p1">Form submitted successfully!</p>
+        <p id="p2">Thank you! The form has been submitted successfully. We will reply to you soon!</p>
 
         <button id="go">Go Back</button>
 
+        <div class="wrapper">
+        <div class="item item1">#Mihai</div>
+        <div class="item item2">#Designer</div>
+        <div class="item item3">#Frontend</div>
+        <div class="item item4">#Developer</div>
+        <div class="item item5">#Backend</div>
+        <div class="item item6">#Freelancer</div>
+        <div class="item item7">#Architect</div>
+        <div class="item item8">#Engineer</div>
     </div>
-</main>
 
-<footer>
-    <div class="footer-div">
-        <p>© 2025 Coffee & Tea. Toate drepturile rezervate.</p>
-        <p>Powered by <a href="https://mihaii.com/" class="devMihai">devMihai</a></p>
-    </div>
-</footer>
+    
+    <footer>
+      <p>© 2025 devMihai. All rights reserved.</p>
+    </footer>
+
+</div>
+    
+    <script src="send.js" defer></script>
+
 </body>
 </html>
