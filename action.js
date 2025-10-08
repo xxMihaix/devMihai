@@ -1,269 +1,142 @@
 
 
-document.addEventListener('DOMContentLoaded', function(){
-    const menu = document.getElementById('menu');
-    
-    menu.addEventListener('click', function(){
-        const dropdown = document.getElementById('dropdown-container');
-        const dropdownStyle = window.getComputedStyle(dropdown);
-        if(dropdownStyle.top === "-150px"){
-            dropdown.classList.add('active');
-        }
-        else{
-            dropdown.classList.remove('active');
-        }
-    })
-})
+const products1 = [
+  {title: 'Espresso', price: 9, image: 'images/CafeaClasicaImg/espressoSimple.png'},
+  {title: 'Americano', price: 10, image: 'images/CafeaClasicaImg/americano.png'},
+  {title: 'Cappuccino', price: 12, image: 'images/CafeaClasicaImg/Cappuccino.png'},
+  {title: 'Caffe Latte', price: 13, image: 'images/CafeaClasicaImg/CaffeLatte.png'},
+  {title: 'Flat White', price: 14, image: 'images/CafeaClasicaImg/FlatWhite.png'},
+  {title: 'Mocha', price: 14, image: 'images/CafeaClasicaImg/Mocha.png'},
+  {title: 'Espresso Tonic', price: 15, image: 'images/CafeaClasicaImg/EspressoTonic.png'},
+  {title: 'Cold Brew', price: 15, image: 'images/CafeaClasicaImg/Cold Brew.png'},
+  {title: 'Iced Americano', price: 12, image: 'images/CafeaClasicaImg/Iced Americano.png'},
+  {title: 'Iced Latte', price: 14, image: 'images/CafeaClasicaImg/Iced Latte.png'},
+  {title: 'Iced Mocha', price: 15, image: 'images/CafeaClasicaImg/Iced Mocha.png'},
+  {title: 'Frappe Classic', price: 16, image: 'images/CafeaClasicaImg/Frappe Classic.png'},
+];
+
+const products2 = [
+  {title: 'Ceai Jasmin', price: 12, image: 'images/CeaiImg/Ceai Jasmin.png'},
+  {title: 'Ceai Assam', price: 12, image: 'images/CeaiImg/Ceai Assam.png'},
+  {title: 'Ceai de Padure', price: 12, image: 'images/CeaiImg/Ceai de Padure.png'},
+  {title: 'Ceai de Menta', price: 12, image: 'images/CeaiImg/Ceai de Menta.png'},
+  {title: 'Rooibos', price: 12, image: 'images/CeaiImg/Rooibos.png'},
+  {title: 'Infuzie Lamaie', price: 13, image: 'images/CeaiImg/Infuzie Lamaie.png'},
+  {title: 'Ceai Rece Vara', price: 14, image: 'images/CeaiImg/Ceai Rece Vara.png'},
+];
 
 
-const container = document.getElementById('carousel');
-let scrollTargetX = container.scrollLeft;
-const scrollStep = 287; /*286 */
+const products3 = [
+  {title: 'Matcha Latte', price: 16, image: 'images/BauturiFreshImg/Matcha Latte.png'},
+  {title: 'Ceai Latte', price: 15, image: 'images/BauturiFreshImg/Chai Latte.png'},
+  {title: 'Golden Latte', price: 15, image: 'images/BauturiFreshImg/Golden Latte.png'},
+  {title: 'Ciocolată caldă', price: 14, image: 'images/BauturiFreshImg/Ciocolată caldă.png'},
+  {title: 'Limonadă', price: 13, image: 'images/BauturiFreshImg/Limonadă.png'},
+  {title: 'Fresh', price: 15, image: 'images/BauturiFreshImg/Fresh.png'},
+  {title: 'Smoothie', price: 16, image: 'images/BauturiFreshImg/Smoothie.png'},
+  {title: 'Apă plată', price: 7, image: 'images/BauturiFreshImg/Apă plată.png'},
+  {title: 'Sucuri naturale', price: 12, image: 'images/BauturiFreshImg/Sucuri naturale.png'},
+  {title: 'Mihaié Champ', price: 799, image: 'images/BauturiFreshImg/Gold.png'},
+];
 
-function clampScroll(value){
+const section1 = document.getElementById('principal-cont-1');
+section1.innerHTML = '';
+products1.forEach((p, index) => {
+  const productHTML = `
+    <li class="card" data-index=${index}>
+      <div class="img-cont"><img src="${p.image}" class="product-img"></div>
+      <p class="title">${p.title}</p>
+      <p class="price">${p.price} lei</p>
+      <div class="btn-cont">
+        <button class="buy-prod">Cumpără</button>
+        <div class='fav-add'>
+          <button class="see-prod">Detalii</button>
+          <svg class='heart' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g 
+          id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648
+           18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499
+            12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </div>
+      </div>
+    </li>`;
+  section1.innerHTML += productHTML;
+});
+
+const section2 = document.getElementById('principal-cont-2');
+section2.innerHTML = '';
+products2.forEach((p, index) => {
+  const productHTML = `
+    <li class="card" data-index=${index}>
+      <div class="img-cont"><img src="${p.image}" class="product-img"></div>
+      <p class="title">${p.title}</p>
+      <p class="price">${p.price} lei</p>
+      <div class="btn-cont">
+        <button class="buy-prod">Cumpără</button>
+        <div class='fav-add'>
+          <button class="see-prod">Detalii</button>
+          <svg class='heart' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g 
+          id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648
+           18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499
+            12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </div>
+      </div>
+    </li>`;
+  section2.innerHTML += productHTML;
+});
+
+const section3 = document.getElementById('principal-cont-3');
+section3.innerHTML = '';
+products3.forEach((p, index) => {
+  const productHTML = `
+    <li class="card" data-index=${index}>
+      <div class="img-cont"><img src="${p.image}" class="product-img"></div>
+      <p class="title">${p.title}</p>
+      <p class="price">${p.price} lei</p>
+      <div class="btn-cont">
+        <button class="buy-prod">Cumpără</button>
+        <div class='fav-add'>
+          <button class="see-prod">Detalii</button>
+          <svg class='heart' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g 
+          id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648
+           18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499
+            12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </div>
+      </div>
+    </li>`;
+  section3.innerHTML += productHTML;
+});
+
+// JavaScript
+const scrollStep = innerWidth < 430 ? 150 : 190;
+
+// Funcție generică de clamp
+function clampScroll(container, value) {
   const maxScroll = container.scrollWidth - container.clientWidth;
   return Math.max(0, Math.min(value, maxScroll));
 }
 
-const btnRight = document.getElementById('rightBtn');
-btnRight.addEventListener('click', () => {
-  
-  scrollTargetX += scrollStep;
-  scrollTargetX = clampScroll(scrollTargetX);
-  container.scrollTo({ left: scrollTargetX, behavior: 'smooth'});
-}) 
-
-const btnLeft = document.getElementById('leftBtn');
-btnLeft.addEventListener('click', () => {
-  
-  scrollTargetX -= scrollStep;
-  scrollTargetX = clampScroll(scrollTargetX);
-  container.scrollTo({ left: scrollTargetX, behavior: 'smooth'});
-})
-
-//  Buttons
-
-const buttons = document.querySelectorAll('.nv-btn');
-
-buttons.forEach((button) => {
-  button.addEventListener('click', function() {
-    const target = button.dataset.target;
-    const targetElement = document.getElementById(target);
-
-    if(targetElement){
-      const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset -100;
-      window.scrollTo({ top: offsetTop, behavior: 'smooth'});
-    }
-
-  })
-})
-
-let btn1 = [
-  document.getElementById('btn1'),
-  document.getElementById('btn3')
-]
-
-let btn2 = [
-  document.getElementById('btn2'),
-  document.getElementById('btn4')
-]
-
-btn1.forEach(btn => {
-  btn.addEventListener('click', function() {
-    const offset = document.getElementById('all-projects-container').getBoundingClientRect().top + window.pageYOffset -100;
-    window.scrollTo({ top: offset, behavior: 'smooth'});
-  })
-})
-
-btn2.forEach(btn => {
-  btn.addEventListener('click', function(){
-    const offset2 = document.getElementById('all-contact-container').getBoundingClientRect().top + window.pageYOffset -100;
-    window.scrollTo({ top: offset2, behavior:'smooth' })
-  })
-})
-
-/////////////////////////////////////////
-
-document.getElementById('btnn1').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/HTML';
-})
-
-document.getElementById('btnn2').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/CSS';
-})
-
-document.getElementById('btnn3').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/JavaScript';
-})
-
-document.getElementById('btnn4').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/Node.js';
-})
-
-document.getElementById('btnn5').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/Express.js';
-})
-
-document.getElementById('btnn6').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/MongoDB';
-})
-
-document.getElementById('btnn7').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/PHP';
-})
-
-document.getElementById('btnn8').addEventListener('click', function() {
-  window.location.href = 'https://en.wikipedia.org/wiki/MySQL';
-})
-
-/////////////////////////////////////////
-
-document.getElementById('ePlantsSite').addEventListener('click', function(){
-  window.location.href = 'https://eplants.mihaii.com/';
-})
-
-document.getElementById('ProfinexSite').addEventListener('click', function(){
-  window.location.href = 'https://profinex.mihaii.com/';
-})
-
-////////////////////////////////////////
-
-document.addEventListener('DOMContentLoaded', function(){
-
-const left0 = document.getElementById('left0');
-const right0 = document.getElementById('right0');
-const display1 = document.getElementById('ePlantsImg');
-
-const imagess = [
-  'ProjectsJpg/ePlants/ePlants1.jpg',
-  'ProjectsJpg/ePlants/ePlants2.jpg',
-  'ProjectsJpg/ePlants/ePlants3.jpg',
-  'ProjectsJpg/ePlants/ePlants4.jpg'
-];
-
-let curentIndex0 = 0;
-display1.src = imagess[curentIndex0];
-
-right0.addEventListener('click', function() {
-  display1.style.opacity = '0';
-
-  setTimeout(() => {
-    curentIndex0 = (curentIndex0 + 1 + imagess.length) % imagess.length;
-
-    display1.src = imagess[curentIndex0];
-
-    display1.style.opacity = '1';
-  }, 300);
-})
-
-left0.addEventListener('click', function() {
-  display1.style.opacity = '0';
-
-  setTimeout(() => {
-    curentIndex0 = (curentIndex0 - 1 + imagess.length) % imagess.length;
-
-    display1.src = imagess[curentIndex0];
-
-    display1.style.opacity = '1';
-  }, 300);
-})
-
-////////////////////////////////////////
-
-
-const left = document.getElementById('left');
-const right = document.getElementById('right');
-const display2 = document.getElementById('ProfinexImg');
-
-const images = [
-  'ProjectsJpg/Profinex/Profinex1.jpg',
-  'ProjectsJpg/Profinex/Profinex2.jpg',
-  'ProjectsJpg/Profinex/Profinex3.jpg',
-  'ProjectsJpg/Profinex/Profinex4.jpg'
-];
-
-let curentIndex = 0;
-display2.src = images[curentIndex];
-
-right.addEventListener('click', function() {
-  display2.style.opacity = '0';
-
-  setTimeout(() => {
-    curentIndex = (curentIndex + 1 + images.length) % images.length;
-
-    display2.src = images[curentIndex];
-
-    display2.style.opacity = '1';
-  }, 400);
-})
-
-left.addEventListener('click', function() {
-  display2.style.opacity = '0';
-
-  setTimeout(() => {
-    curentIndex = (curentIndex - 1 + images.length) % images.length;
-
-    display2.src = images[curentIndex];
-
-    display2.style.opacity = '1';
-  }, 400);
-})
-
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-const container = document.getElementById("carousel");
-let scrollTargetX = container.scrollLeft;
-const SCROLL_STEP = 280; // 270 width + 10 gap
-
-function clampScroll(value) {
-  const maxScroll = container.scrollWidth - container.clientWidth;
-  return Math.max(0, Math.min(value, maxScroll));
+// Funcție care atașează logica de scroll la un set de butoane
+function setupScroll(containerId, leftBtnId, rightBtnId) {
+  const container = document.getElementById(containerId);
+  const leftBtn = document.getElementById(leftBtnId);
+  const rightBtn = document.getElementById(rightBtnId);
+
+  let scrollTargetX = container.scrollLeft;
+
+  leftBtn.addEventListener("click", () => {
+    scrollTargetX -= scrollStep;
+    scrollTargetX = clampScroll(container, scrollTargetX);
+    container.scrollTo({ left: scrollTargetX, behavior: "smooth" });
+  });
+
+  rightBtn.addEventListener("click", () => {
+    scrollTargetX += scrollStep;
+    scrollTargetX = clampScroll(container, scrollTargetX);
+    container.scrollTo({ left: scrollTargetX, behavior: "smooth" });
+  });
 }
 
-document.getElementById("rightBtn").addEventListener("click", () => {
-  scrollTargetX += SCROLL_STEP;
-  scrollTargetX = clampScroll(scrollTargetX);
-  container.scrollTo({ left: scrollTargetX, behavior: "smooth" });
-});
+// Setări pentru toate cele 3 containere
+setupScroll("principal-cont-1", "leftBtn1", "rightBtn1");
+setupScroll("principal-cont-2", "leftBtn2", "rightBtn2");
+setupScroll("principal-cont-3", "leftBtn3", "rightBtn3");
 
-document.getElementById("leftBtn").addEventListener("click", () => {
-  scrollTargetX -= SCROLL_STEP;
-  scrollTargetX = clampScroll(scrollTargetX);
-  container.scrollTo({ left: scrollTargetX, behavior: "smooth" });
-});
-
-*/

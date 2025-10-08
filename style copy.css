@@ -20,11 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-body.dark{
-    background-color: #2e2c2c;
-}
-
-body.active::before {
+body::before {
   content: "";
   position: fixed; /* Rămâne fix pe ecran */
   top: 0;
@@ -35,7 +31,7 @@ body.active::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(0px) brightness(0.5); /* blur + întunecare */
+  filter: blur(3px) brightness(0.6); /* blur + întunecare */
   z-index: -1; /* trimite-l în spate */
 }
 
@@ -57,10 +53,6 @@ body.active::before {
     width: 100%;
 }
 
-.navbar.dark{
-    background-color: #1E1E1E;
-}
-
 @media(max-width: 1070px){
     .navbar{
         padding-left: 20px;
@@ -77,17 +69,12 @@ body.active::before {
     font-weight: bold;
     font-size: 30px;
     padding: 5px;
-    height: 57px;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
     position: fixed;
     z-index: 98;
     width: 100%;
-}
-
-.navbar-mobile.dark{
-    background-color: #1E1E1E;
 }
 
 .list{
@@ -101,11 +88,6 @@ body.active::before {
     font-weight: bold;
     font-size: 30px;
     padding: 7px;
-    margin-top: 5px;
-}
-
-.list.dark{
-    background-color: #1E1E1E;
 }
 
 .list li{
@@ -130,7 +112,7 @@ body.active::before {
     filter: invert(100%);
 }
 
-@media(max-width: 880px){
+@media(max-width: 840px){
     .navbar{
         display: none;
     }
@@ -145,10 +127,7 @@ body.active::before {
         padding-right: 15px;
     }
     .list{
-        gap: 20px;
-    }
-    .spc{
-        margin-left: 5px;
+        gap: 15px;
     }
 }
 
@@ -162,13 +141,9 @@ body.active::before {
     display: block;
 }
 
-.mobile-menu.dark{
-    background-color: #1e1e1eac;
-}
-
 @media(max-width: 370px){
     .mobile-menu{
-        width: 250px;
+        width: 210px;
     }
 }
 
@@ -179,7 +154,7 @@ body.active::before {
     color: white;
     font-weight: bold;
     font-size: 30px;
-    height: 57px;
+    height: 62px;
     background-color: #6f4e37;
     justify-content: center;
     flex-direction: column;
@@ -192,9 +167,6 @@ body.active::before {
     margin-top: 20px;
     margin-left: 30px;
     list-style-type: none;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
 }
 
 .content-menu button{
@@ -214,11 +186,10 @@ body.active::before {
   transform: translateX(0);
 }
 
-
 /****************** Cos cu produse *********************/
 
 .cart-container{
-    width: 400px;
+    width: 375px;
     height: 100vh;
     background-color:#6f4e37db;
     position: fixed;
@@ -227,12 +198,6 @@ body.active::before {
     right: 0px;
     border: 3px solid #3c2d22;
     border-right: none;
-}
-
-.cart-container.dark{
-    background-color: #181717e6;
-    border-bottom: none;
-    border-left: 2px solid #1E1E1E;
 }
 
 #cart-container{
@@ -254,7 +219,7 @@ body.active::before {
 
 .align-items{
     width: 100%;
-    height: 54px;
+    height: 59px;
 }
 
 .cart-title-container{
@@ -269,12 +234,6 @@ body.active::before {
     border-bottom: 3px solid #3c2d22;
     background-color:#6f4e37;
 }
-
-.cart-title-container.dark{
-    background-color: #2e2c2c;
-    border: none;
-}
-
 
 .cart-title-container p{
     color: white;
@@ -298,25 +257,15 @@ body.active::before {
 .header-container {
     position: relative;
     width: 100%;
-    height: 101vh; /* ocupă tot ecranul */
+    height: 100vh; /* ocupă tot ecranul */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid #694a33;
-}
-
-.header-container.dark{
-    border-bottom: 5px solid #1E1E1E;
-}
-
-.header-container.active{
-    border-bottom: none;
 }
 
 .video{
     position: absolute;
-    display: block;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -324,15 +273,6 @@ body.active::before {
     transform: translate(-50%, -50%);
     object-fit:cover;
     z-index: 1;
-    box-shadow: 0 20px 20px rgba(34, 34, 34, 0.15);
-}
-
-.video.active{
-    display: none;
-}
-
-.video.dark{
-    filter: brightness(0.6) contrast(1) saturate(1);
 }
 
 .principal-text {
@@ -417,67 +357,31 @@ body.active::before {
 
 /************* Setari ************/
 
-@media(min-width: 880px){
-    #acasa2, #despre2, #produse2, #contact2{
-    display: none;
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  background: #6f4e3700;
+
+  transition: max-height 0.5s;
 }
 
-.content-menu{
-    gap: 0px;
+/* când meniul este activ */
+.dropdown.active .dropdown-menu {
+  max-height: 500px; /* destul cât să conțină tot */
 }
 
-#margin-top{
-    margin-top: 20px;
-}
-}
-
-.center{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    align-items: center;
+.dropdown-menu li {
+  cursor: pointer;
+  padding: 8px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
 }
 
-.btn-img, .btn-dark{
-    height: 35px;
-    width: 70px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 25px;
-    position: relative;
-    cursor: pointer;
-}
-
-
-#switch1, #switch2{
-    background-color: #795439;
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border-radius: 25px;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-51%);
-    margin-left: 3px;
-    margin-right: 3px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#switch1.active, #switch2.active{
-    left: 34px;
-    transition: 0.5s;
-}
-
-#switch2.frr{
-    background-color: #795439;
-}
-
-#switch1.dark, #switch2.dark{
-    background-color: #2e2c2c;
-}
-
-
-/***************** SOON *************************************************************/
+/***************** SOON ***************/
 
 .soon1{
     text-align: center;
@@ -496,8 +400,6 @@ body.active::before {
     color: rgb(149, 2, 149);
     font-weight: bold;
 }
-
-
 
 
 
@@ -523,17 +425,6 @@ body.active::before {
     font-size: 35px;
     font-weight: bold;
     color:#6f4e37;
-    margin-bottom: 10px;
-}
-
-@media(max-width: 420px){
-    .title-despre-noi{
-        margin: 0px;
-    }
-}
-
-.title-despre-noi.active, .title-despre-noi.dark{
-    color:#ffffff;
 }
 
 .colect-all{
@@ -565,13 +456,6 @@ body.active::before {
    background-color: #845839;
     padding: 15px;
     border-radius: 17px;
-    transition: 0s;
-}
-
-.par.dark{
-    background-color: #403d3d00;
-    border: 3px solid white;
-    transition: 0s;
 }
 
 .container-map {
@@ -581,7 +465,6 @@ body.active::before {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-        transition: 0s;
 }
 
 .immg{
@@ -593,10 +476,6 @@ body.active::before {
     width: 100%;
     height: 260px;
     position: relative;
-}
-
-.immg.active, .immg.dark{
-    border: 3px solid #ffffff;
 }
 
 .vezi-map{
@@ -612,12 +491,7 @@ body.active::before {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-    width: 180px;
-}
-
-.vezi-map.dark{
-    border: 3px solid white;
-    background-color: #2e2c2c
+    width: 170px;
 }
 
 /************ Software 2.0 *************/
@@ -636,10 +510,6 @@ body.active::before {
     padding: 15px;
 }
 
-.spec.active, .spec.dark{
-    border: 3px solid #ffffff;
-}
-
 .soft{
     font-weight: bold;
     color:#6f4e37;
@@ -650,19 +520,11 @@ body.active::before {
     text-align: center;
 }
 
-.soft.active, .soft.dark{
-    color:#ffffff;
-}
-
 .soft-text{
     color: #6f4e37;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
-}
-
-.soft-text.active, .soft-text.dark{
-    color: #ffffff;
 }
 
 .btn-soft{
@@ -677,11 +539,7 @@ body.active::before {
     width: 130px;
 }
 
-.btn-soft.dark{
-    background-color: #1E1E1E;
-    color: white;
-    border: 2px solid white;
-}
+
 
 
 
@@ -716,7 +574,7 @@ body.active::before {
 /************* Wrapper ***************/
 
 .wrapper{
-    margin-top: 10px;
+    margin: 0px;
     width: 95%;
     max-width: 1200px;
     gap: 100px;
@@ -764,10 +622,6 @@ body.active::before {
     animation: scrollLeft 30s linear infinite;
 }
 
-.item.active, .item.dark{
-    color: #ffffff;
-}
-
 .item1 {
     animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }
@@ -799,82 +653,9 @@ body.active::before {
 .item8 {
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
-/*********** Cart Products **************/
 
-#prod-content{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    max-height: 65%;
-    overflow-y: auto;
-}
 
-.show-price{
-    height: 30%;
-    border-top: 2px solid white;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    padding: 15px;
-    color: white;
-    font-weight: bold;
-}
 
-.prod{
-    background-color: transparent;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    gap: 2%;
-    align-items: center;
-    padding-right: 2%;
-}
-
-.title-cart{
-    width: 55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-}
-
-.quantity{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.decrease, .increase{
-    width: 9%;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    font-weight: bold;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.remove{
-    background-color: rgb(197, 14, 14);
-    border: 0px;
-    border-radius: 25px;
-    padding: 0px 15px;
-    color: white;
-    font-weight: bold;
-    width: 24%;
-    height: 100%;
-    cursor: pointer;
-}
 
 /************  Online Store  ************/
 
@@ -893,10 +674,6 @@ body.active::before {
     font-size: 35px;
     color: #795439;
     margin-bottom: 30px;
-}
-
-.magazin-online.active, .magazin-online.dark{
-    color: #ffffff;
 }
 
 .recenter{
@@ -924,11 +701,6 @@ body.active::before {
     border-top: 3px solid #795439;
     border-bottom: 3px solid #795439;
     width: 100%;
-}
-
-.princ.active, .princ.dark{
-    border-top: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
 }
 
 @media(max-width: 1200px){
@@ -962,19 +734,11 @@ body.active::before {
     transform: translateY(-50%);
 }
 
-.leftBtn.dark{
-    background-color: #1E1E1E;
-}
-
 .rightBtn{
     position: absolute;
     right: 0px;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.rightBtn.dark{
-    background-color: #1E1E1E;
 }
 
 .rightBtn, .leftBtn{
@@ -1030,10 +794,6 @@ body.active::before {
     flex-direction: column;
 }
 
-.card.dark{
-    background-color: #403d3d;
-}
-
 .product-img{
     width: 150px;
     height: 150px;
@@ -1070,16 +830,8 @@ body.active::before {
     padding: 0px 25px;
     border: 1px solid white;
     border-radius: 25px;
-    width: 90%;
+    width: 100%;
     cursor: pointer;
-}
-
-.fav-add{
-    background-color: transparent;
-    width: 90%;
-    display: flex;
-    gap: 4px;
-    align-items: center;
 }
 
 .see-prod{
@@ -1087,73 +839,11 @@ body.active::before {
     font-weight: bold;
     color: white;
     background-color: transparent;
+    padding: 0px 25px;
     border: 1px solid white;
     border-radius: 25px;
-    width: 75%;
-    cursor: pointer;
-    height: 90%;
-}
-
-.star{
-    height: auto;
-    width: 20%;
-    filter: invert(100%);
-    cursor: pointer;
-    fill: white;
-}
-
-.star:hover{
-    fill: white;
-}
-
-.heart{
-    width: 20%;
-    filter: invert(100%);
-    cursor: pointer;
-}
-
-.heart:hover{
-    fill: rgb(0, 0, 0);
-}
-
-.border{
     width: 100%;
-    height: 2px;
-    background-color: white;
-}
-
-@media(min-width: 880px){
-    .border{
-        display: none;
-    }
-}
-
-.flex{
-    display: flex;
-    gap: 8px;
-    font-size: 20px;
-    align-items: center;
     cursor: pointer;
-    margin-bottom: -2px;
-}
-
-#unic{
-    font-size: 24px;
-}
-
-@media(min-width: 880px){
-    .flex{
-        margin-bottom: 20px;
-    }
-}
-
-.heart-icon{
-    fill: white;
-    width: 35px;
-}
-
-.heart-icon path{
-    stroke: rgb(255, 255, 255);
 }
 
 
@@ -1163,10 +853,6 @@ body.active::before {
     font-size: 25px;
     color: #795439;
     text-align: left;
-}
-
-.type-categories.active, .type-categories.dark{
-    color: #ffffff;
 }
 
 
@@ -1180,11 +866,6 @@ body.active::before {
         max-width: 100%;
         border-top: 3px solid #795439;   
         border-bottom: 3px solid #795439;
-    }
-
-    .princ.active, .princ.dark{
-        border-top: 3px solid #bab4b0;   
-        border-bottom: 3px solid #bab4b0;
     }
 
     .title{
@@ -1207,20 +888,10 @@ body.active::before {
         height: 120px;
     }
 
-    .buy-prod{
+    .buy-prod, .see-prod{
         font-size: 15px;
         padding: 0px 15px;
     }
-
-    .see-prod{
-        font-size: 15px;
-        height: 100%;
-    }
-
-    .star{
-        height: 100%;
-    }
-
 }
 
 @media(max-width: 390px){
@@ -1257,10 +928,7 @@ body.active::before {
   cursor: pointer;
 }
 
-#produse3.dark, #contact3.dark{
-    background-color: #2e2c2c;
-    border: 0px solid white;
-}
+
 
 /*********** Contact Us ***********/
 
@@ -1290,10 +958,6 @@ body.active::before {
     margin-bottom: 10px;
 }
 
-.contacteaza-ne.active, .contacteaza-ne.dark{
-    color:#f4f4f4;
-}
-
 .email-container{
     display: flex;
     flex-direction: column;
@@ -1302,10 +966,6 @@ body.active::before {
     border-radius: 20px;
     max-width: 1100px;
     width: 100%;
-}
-
-.email-container.active, .email-container.dark{
-    border: 3px solid #ffffff;
 }
 
 @media(max-width: 450px){
@@ -1333,17 +993,9 @@ body.active::before {
     outline: none;
 }
 
-.contact-name.dark, .contact-email.dark{
-    background-color: #403d3d;
-}
-
 .email-container form label{
     color:#6f4e37;
     font-weight: bold;
-}
-
-.email-container form label.active, .email-container form label.dark{
-    color:#ffffff;
 }
 
 .real-email-text{
@@ -1351,10 +1003,6 @@ body.active::before {
     color:#6f4e37;
     font-weight: bold;
     margin-bottom: 15px;
-}
-
-.real-email-text.active, .real-email-text.dark{
-    color:#f5f5f5;
 }
 
 .mesaj-container{
@@ -1370,10 +1018,6 @@ body.active::before {
     padding: 15px;
     outline: none;
     color: white;
-}
-
-.mesaj.dark{
-    background-color: #403d3d;
 }
 
 .submit-container{
@@ -1397,19 +1041,6 @@ body.active::before {
     cursor: pointer;
 }
 
-.submit.dark{
-    background-color: #1E1E1E;
-    border: 2px solid white;
-}
-
-label{
-    color: #6f4e37;;
-}
-
-label.active{
-    color: white;
-}
-
 
 /************ Footer *************/
 
@@ -1427,11 +1058,6 @@ label.active{
     font-size: 14px;
     z-index: 99;
     border-top: 3px solid #3c2d22;
-}
-
-.footer-div.dark{
-    border-top: #1E1E1E;
-    background-color: #1E1E1E;
 }
 
 .devMihai{
