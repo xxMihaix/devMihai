@@ -4,155 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi, I'm Mihai! I build modern websites using HTML, CSS, and JavaScript. Explore my projects, experiments, and tutorials about web development.">
+    <meta name="description" content="Hi, We are Digitalizarea Micilor Afaceri, we build modern websites using HTML, CSS, and JavaScript. Explore my projects, experiments, and tutorials about web development.">
     <!-- Keywords (not crucial, but can help a bit) -->
     <meta name="keywords" content="web development, web developer, html, css, javascript, projects, portfolio, front-end, programming">
     <!-- Author -->
-    <meta name="author" content="Mihai">
+    <meta name="author" content="DMA">
     <!-- Open Graph for social media -->
-    <meta property="og:title" content="DevMihai - Web Developer Portfolio">
-    <meta property="og:description" content="Discover my projects and tutorials about HTML, CSS, and JavaScript.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://xxmihaix.github.io/devMihai">
-    <meta property="og:image" content="https://xxmihaix.github.io/devMihai/preview.png">
 
     <title>devMihai</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
+
 <body>
-      <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6QFKR1NJP"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="pvbTRIC2vLZSn26e-xf_I";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+  <div class="bodyy" id="bdy"></div>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZV0JRYBH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'G-F6QFKR1NJP');
-    </script>
+    gtag('config', 'G-K2ZV0JRYBH');
+  </script>
 
-    <div id="pc-navbar">
-        <div id="logo-container">
-            <p id="logo1">dev<span id="logo2">Mihai</span></p>
-        </div>
-        <ul>
-            <li><button class="nv-btn" data-target="inv-nav1">Home</button></li>
-            <li><button class="nv-btn" data-target="cont">Languages</button></li>
-            <li><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(184, 13, 184)">Projects</span></button></li>
-            <li><button class="nv-btn" data-target="all-contact-container">Contact</button></li>
-        </ul>
+<div id="all-analytic-container">
+  <div id="analytic-container">
+    <p id="analytic-title">Google Analytics</p>
+    <img src="Images/GoogleAnalytics.png">
+    <button id="close">Close</button>
+  </div>
+</div>
+<div id="pc-navbar">
+  <div id="logo-container">
+    <div class="logoc">
+      <p class="dma">devMihai</p>
     </div>
-    <div id="mobile-navbar">
-        <div id="logo-container">
-            <p id="logo1">dev<span id="logo2">Mihai</span></p>
-        </div>
-        <img src="Images/menu.svg" id="menu">
+  </div>
+  <ul>
+    <li><button id="acasa1" class="nv-btn" data-target="inv-nav1">Home</button></li>
+    <li><button id="desprenoi1" class="nv-btn" data-target="cont">About Us</button></li>
+    <li><button id="btn" class="nv-btn" data-target="project-tit"><span
+          style="color: rgb(10, 155, 238);">Projects</span></button></li>
+    <li><button id="contact1" class="nv-btn" data-target="--">Contact</button></li>
+  </ul>
+</div>
+<div id="mobile-navbar">
+  <div id="logo-container2">
+    <div class="logoc">
+      <img src="Images/onlyLogo.png" class="lgo"><p class="dma">devMihai</p>
     </div>
-    
-    <!--PC-->
-    <div id="pc-hero" >
-        <div id="inv-nav1" class="inv-nav"></div>
-        <div id="hero">
-        <!-- HERO 1 -->
-        <div id="text-hero" class="hero-el"><p id="text-hero1" class="hero-text">Hello, I’m <span id="mihai" class="purple">Mihai</span></p>
-            <!--<div class="container">
-                <span class="text first-tect">I'm a</span>
-            </div>-->
-            <p id="text-hero2" class="hero-text">I build complete websites – from design and structure to domain setup and online launch, managing every detail to ensure a smooth and professional online presence.</p>
-            <div id="btn-container">
-                <button class="btn" id="btn1">My Projects</button>
-                <button class="btn" id="btn2">Contact Me</button>
-            </div>
-        </div>
-        <!-- HERO 2 -->
-        <div id="video-container" class="hero-el">
-            <video autoplay muted loop id="video">
-                <source src="Images/Vdeeo.mp4"></source>
-            </video>
-        </div>
-    </div>
-    </div>
+  </div>
+  <img src="Images/menu.svg" id="menu">
+</div>
+<!-- Navbar -->
+<div class="header-container" id="acasa">
+  <!-- Video ca fundal -->
+  <video src="Images/HeroVideooo.mp4" video.playbackRate=0.2; class="video" autoplay muted loop playsinline></video>
 
-    <div id="mobile-hero" >
-        <div id='inv-nav2' class="inv-nav"></div>
-        <div id="hero">
-        <!-- HERO 1 -->
-        <div id="text-hero" class="hero-el"><p id="text-hero1" class="hero-text">Hello, I’m <span id="mihai" class="purple">Mihai</span></p>
-            <p id="text-hero2" class="hero-text">I build complete websites – from design and structure to domain setup and online launch, managing every detail to ensure a smooth and professional online presence.</p>
-        </div>
-        <!-- HERO 2 -->
-        <div id="video-container" class="hero-el">
-            <video autoplay muted loop id="video">
-                <source src="Images/Vdeeo.mp4"></source>
-            </video>
-        </div>
-        <div id="btn-container">
-                <button class="btn" id="btn3">My Projects</button>
-                <button class="btn" id="btn4">Contact Me</button>
-        </div>
+  <!-- Text și butoane peste video -->
+  <div class="principal-text">
+    <p class="title-prin">devMihai Presents</p>
+    <p class="descriptionn">Vision, innovation and results – all in one team!</p>
+    <div class="buttons-go">
+      <button id="desprenoi3">About Us <span>↗</span></button>
+      <button id="contact3">Contact <span>↗</span></button>
     </div>
-    </div>
+  </div>
+</div>
 
-    <div id="dropdown-container">
-        <div class="el"><button class="nv-btn" data-target="mobile-hero">Home</button></div>
-        <div class="el"><button class="nv-btn" data-target="cont">Languages</button></div>
-        <div class="el"><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(184, 13, 184)">Projects</span></button></div>
-        <div class="el"><button class="nv-btn" data-target="all-contact-container">Contact</button></div>
-    </div>
+<div id="dropdown-container">
+  <div class="el"><button id="acasa2" class="nv-btn" data-target="mobile-hero">Home</button></div>
+  <div class="el"><button id="desprenoi2" class="nv-btn" data-target="cont">About Us</button></div>
+  <div class="el"><button class="nv-btn" data-target="project-tit"><span
+        style="color: rgb(10, 155, 238);">Projects</span></button></div>
+  <div class="el"><button id="contact2" class="nv-btn" data-target="all-contact-container">Contact</button></div>
+</div>
 
-    <div class="wrapper">
-        <div class="item item1">#Mihai</div>
-        <div class="item item2">#Designer</div>
-        <div class="item item3">#Frontend</div>
-        <div class="item item4">#Developer</div>
-        <div class="item item5">#Backend</div>
-        <div class="item item6">#Freelancer</div>
-        <div class="item item7">#Architect</div>
-        <div class="item item8">#Engineer</div>
-    </div>
 
-    <!--PC -->
-    <div class="aboutme-cont">
-      <p>About Me</p>
-      <div id="spec" class="aboutme-hov">
-        <div class="aboutme-cont">
-          <div class="text-about"><p>
-        My name is Mihai and I create complete websites - from design and structure to configuration and online launch. I believe that a successful website
-         should be both visually appealing and easy to use, which motivates me to offer personalized solutions for each project.
-        </p></div>
-        <div class="text-about"><p>
-I place great emphasis on communication and transparency, so that the final result reflects exactly what you want. Whether you need a presentation website,
- an online store or a blog, I can help you have a professional and efficient digital presence.
-      </p></div>
+<div class="wrapper hidden">
+  <div class="item item1">#devMihai</div>
+  <div class="item item2">#Designer</div>
+  <div class="item item3">#Frontend</div>
+  <div class="item item4">#Developer</div>
+  <div class="item item5">#Backend</div>
+  <div class="item item6">#Freelancer</div>
+  <div class="item item7">#Architect</div>
+  <div class="item item8">#Engineer</div>
+</div>
+
+<!-- DESPRE NOI -->
+<p class="titlle hidden">About Us</p>
+<div class="center-all hidden" id="center-all1">
+  <div class="section" id="section1">
+    <div class="content">
+      <div class="sec1">
+        <p class="tit">We dedicate ourselves to each project to make it memorable!</p>
+        <iframe id="yt-video" src="https://www.youtube.com/embed/sIOg6IUgfwM" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
         </div>
-        <div class="aboutme-img">
-          <img src="Images/temp.png">
+      <div class="sec2">
+        <div class="img-sec">
+          <div id="analytic" class="container-img-1"></div>
+          <div class="container-img-2"><a
+              onclick="alert('Unable to see the map')"><button
+                id="see-map">Map <span> ↗</span></button></a></div>
+        </div>
+        <div class="text-us">We handle both static, fast and efficient websites, as well as dynamic, complex and interactive platforms — all so that your online image reflects the professionalism and identity of your business.<br><br>
+          We are a young and passionate team
+of IT, specialized in the creation and maintenance of websites,
+adapted to the needs of each client.
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- Mobile -->
-    <div class="aboutme-cont2">
-      <p>About Me</p>
-      <div id="spec" class="aboutme-hov2">
-        <div class="aboutme-cont2">
-          <div class="text-about2"><p>
-        My name is Mihai and I create complete websites - from design and structure to configuration and online launch. I believe that a successful website
-         should be both visually appealing and easy to use, which motivates me to offer personalized solutions for each project.
-        </p></div>
-        <div class="aboutme-img">
-          <img src="Images/temp.png">
-        </div>
-        <div class="text-about2"><p>
-I place great emphasis on communication and transparency, so that the final result reflects exactly what you want. Whether you need a presentation website,
- an online store or a blog, I can help you have a professional and efficient digital presence.
-      </p></div>
-        </div>
-      </div>
-    </div>
 
     <div id="cont" class="hidden">
-  <p id="languages">Languages:</p>
+  <p id="languages">Limbaje:</p>
   <div id="wrapper">
     <i id="leftBtn" class="fa-solid fa-angle-left"></i>
     <ul id="carousel">
@@ -161,7 +135,7 @@ I place great emphasis on communication and transparency, so that the final resu
           <img src="Images/html.jpg" class="imagess" />
         </div>
         <p class="title">HTML</p>
-        <p class="description">It is the foundational language used to structure the content of a web page, defining elements such as headings, text, images, and links.</p>
+        <p class="description">It is the fundamental language used to structure the content of a web page, defining elements such as titles, text, images, and links.</p>
         <button id="btnn1">Info <span>↗</span></button>
       </li>
       <li class="card">
@@ -169,7 +143,7 @@ I place great emphasis on communication and transparency, so that the final resu
           <img src="Images/css.jpg" class="imagess" />
         </div>
         <p class="title">CSS</p>
-        <p class="description">It allows the styling of HTML elements and controls the visual appearance of the website, including colors, fonts, layout, and graphic effects.</p>
+        <p class="description">It allows styling of HTML elements and controls the visual appearance of the website, including colors, fonts, layout, and graphic effects.</p>
         <button id="btnn2">Info <span>↗</span></button>
       </li>
       <li class="card">
@@ -177,7 +151,7 @@ I place great emphasis on communication and transparency, so that the final resu
           <img src="Images/js.jpg" class="imagess" />
         </div>
         <p class="title">JavaScript</p>
-        <p class="description">A programming language that adds interactivity to web pages, enabling dynamic actions and real-time content updates.</p>
+        <p class="description">A programming language that adds interactivity to web pages, allowing dynamic actions and real-time content updates.</p>
         <button id="btnn3">Info <span>↗</span></button>
       </li>
       <li class="card">
@@ -201,7 +175,7 @@ I place great emphasis on communication and transparency, so that the final resu
           <img src="Images/mongodb.png" class="imagess" />
         </div>
         <p class="title">MongoDB</p>
-        <p class="description">A NoSQL database that stores data in flexible, JSON-like documents, making it easy to handle large, unstructured, and evolving datasets.</p>
+        <p class="description">A database that stores data in flexible, JSON-type documents, facilitating the management of large, unstructured, and constantly evolving data sets.</p>
         <button id="btnn6">Info <span>↗</span></button>
       </li>
       <li class="card">
@@ -209,7 +183,7 @@ I place great emphasis on communication and transparency, so that the final resu
           <img src="Images/php.jpg" class="imagess" />
         </div>
         <p class="title">PHP</p>
-        <p class="description">A server-side language used for generating dynamic content and interacting with databases in web applications.</p>
+        <p class="description">A server-side programming language used for generating dynamic content and interacting with databases in web applications.</p>
         <button id="btnn7">Info <span>↗</span></button>
       </li>
       <li class="card">
@@ -217,7 +191,7 @@ I place great emphasis on communication and transparency, so that the final resu
           <img src="Images/mysql.jpg" class="imagess" />
         </div>
         <p class="title">MySql</p>
-        <p class="description">A relational database management system used for efficiently storing and organizing a website’s data.</p>
+        <p class="description">A relational database management system used to efficiently store and organize a website's data.</p>
         <button id="btnn8">Info <span>↗</span></button>
       </li>
     </ul>
@@ -225,8 +199,8 @@ I place great emphasis on communication and transparency, so that the final resu
   </div>
 </div>
 
-<div class="wrapper">
-        <div class="item item1">#Mihai</div>
+<div class="wrapper hidden">
+        <div class="item item1">#devMihai</div>
         <div class="item item2">#Designer</div>
         <div class="item item3">#Frontend</div>
         <div class="item item4">#Developer</div>
@@ -236,123 +210,139 @@ I place great emphasis on communication and transparency, so that the final resu
         <div class="item item8">#Engineer</div>
     </div>
 
-<!--
-<div id="all-projects-container" class="hidden">
-  <p id="projects-title">My Projects:</p>
-  <div id="projects-container">
-    Content Projects
-    <div class="all-project">
-      <p class="project-title">ePlants</p>
-      <div class="project-container">
 
-      </div>
-    </div>
+<!-- PROIECTE -->
+        <p class="proj-title hidden" id="project-tit">Our clients:</p>
+        <div class="center-all hidden" id="center-all2">
+            <div class="section" id="section2">
+                <div class="content project-container-all" id="project-container-all">
 
-    <div class="all-project">
-      <p class="project-title">Profinex</p>
-      <div class="project-container">
-        
-      </div>
-    </div>
-    </div>
-      
-
-    </div>
-</div>-->
-<!--
-    <div class="new-proj">
-      <p>New Project</p>
-      <div class="cont-proj">
-        <p>Something great is coming, a fun new website for everyone.</p>
-      </div>
-    </div>-->
-
-<div id="all-projects-container" class="hidden">
-  <p id="project-title">My Projects:</p>
-  <div id="content-pr">
-    <p class="comming">Something great is coming, a fun new website for everyone. <a href="https://online-nx41.onrender.com/login" class="check-here">Check here</a></p>
-
-    <div class="els">
-      <p class="tit">ePlants</p>
-      <div class="conn">
-        <!-- To Build -->
-      
-        <!--------------------------->
-        <div class="img-cont">  
-          <i id="left0" class="fa-solid fa-angle-left"></i>
-          <img id="ePlantsImg" src="ProjectsJpg/ePlants/ePlants1.jpg" class="img">
-          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
-          <i id="right0" class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="show">
+                    <button id="show-btn" class="show-btn">Show More</button>
+                </div>
+            </div>
         </div>
-        <!--------------------------->
-        <div class="text-cont">
-          <div class="width-p">
-            <span class='des-title'>ePlants</span>
-            <p class="site-des">ePlants is made by devMihai and is a portfolio for all applications, from local JSON store to games like Guess the number or scroll animations.</p></div>
-          
-          <button id="ePlantsSite">Visit Site <span>↗</span></button>
-        </div>
-        <!--------------------------->
-      </div>
-    </div>
+<!-- Q&A -->
 
-    <div class="els">
-      <p class="tit">Profinex</p>
-      <div class="conn">
-        <!-- To Build -->
-        
-        <!--------------------------->
-        <div class="img-cont">  
-          <i id="left" class="fa-solid fa-angle-left"></i>
-          <img id='ProfinexImg' src="ProjectsJpg/Profinex/Profinex1.jpg" class="img">
-          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
-          <i id="right" class="fa-solid fa-angle-right"></i>
-        </div>
-        <!--------------------------->
-        <div class="text-cont">
-          <div class="width-p">
-            <span class='des-title'>Profinex</span>
-            <p class="site-des">Profinex is a website created for a client with the aim of presenting the services provided in a modern way, but also an email for contact.</p></div>
-          
-          <button id="ProfinexSite">Visit Site <span>↗</span></button>
-        </div>
-        <!--------------------------->
-      </div>
+<div class="cont-questions hidden">
+  <p class="quest-title">Frequently Asked Questions:</p>
+  <!-- Question 1 -->
+  <div class="quest-container">
+    <div class="quest-question">
+      <p class="text-question">Why choose us?</p>
     </div>
-
+    <div class="quest-answer">
+      <p class="text-answer">100% customized solutions, no generic templates.<br>
+        Fast delivery and transparent communication throughout the project.<br>
+        Focus on real performance: the site is not just beautiful, but optimized for speed, SEO and conversions.<br>
+        Post-launch support: we don't leave you alone after the site is live.</p>
+    </div>
+  </div>
+  <!-- Question 2 -->
+  <div class="quest-container">
+    <div class="quest-question">
+      <p class="text-question">How long does it take to make a website?</p>
+    </div>
+    <div class="quest-answer">
+      <p class="text-answer">Simple project (e.g. presentation page): ~ 3-5 business days.<br>
+        Presentation site with a few pages (e.g. "About", "Services", "Contact"): ~ 7-10 days.<br>
+        Online store or website with complex functionalities: ~ 10-15 business days (maybe longer depending on requirements).<br>
+        Important: we will establish the concrete calendar after we define together the project structure and requirements.</p>
+    </div>
+  </div>
+  <!-- Question 3 -->
+<div class="quest-container">
+  <div class="quest-question">
+    <p class="text-question">How much does a website cost and what do we offer?</p>
+  </div>
+  <div class="quest-answer">
+    <p class="text-answer">
+      Basic package starting from €480.<br>
+      What’s included: custom and responsive design, basic SEO optimization, security, contact element integration,
+      post-delivery support.<br>
+      Additional functionalities (online store, booking system, API integrations, etc.) are priced separately — we
+      provide a clear quote after reviewing the specifications.<br>
+      No hidden costs: you’ll receive a transparent estimate before the project starts.
+    </p>
   </div>
 </div>
 
+<!-- Question 4 -->
+<div class="quest-container">
+  <div class="quest-question">
+    <p class="text-question">How many clients do we currently have?</p>
+  </div>
+  <div class="quest-answer">
+    <p class="text-answer">
+      We have worked with over 5 satisfied clients from various fields
+      — small entrepreneurs, startups, and medium-sized businesses.<br>
+      We continue to grow our portfolio and deliver concrete results for every client.<br>
+      Upon request, we can present case studies or testimonials so you can clearly see what we’ve achieved.
+    </p>
+  </div>
+</div>
 
+</div>
 
 <!-- CONTACT -->
+<p class="title hidden" id="title3">Contact</p>
+<div class="center-all hidden" id="center-all3">
+  <div class="section" id="section3">
+    <div class="contentt">
+      <div class="sect2">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <p class="scrie-ne">Write to Us:</p>
 
-<div id="all-contact-container" class="hidden">
-  <p id="contact-title">Contact Me:</p>
-  <div id="contact-container">
-    <!--Content Projects-->
-    <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- Replace with your Access Key -->
+          <input type="hidden" name="access_key" value="049bd191-5a6d-4617-8e77-501a20a2e3c7">
 
-    <!-- Replace with your Access Key -->
-    <input type="hidden" name="access_key" value="049bd191-5a6d-4617-8e77-501a20a2e3c7">
+          <!-- Form Inputs. Each input must have a name="" attribute -->
+          <label>Name:</label>
+          <input class="nume" type="text" name="name" required><br>
+          
+          <label>Email:</label><span> </span>
+          <input class="email" type="email" name="email" required>
+          <p>The response will be sent to this email*</p>
+          
+          <div class="msg-label"></div>
+          
+          <label>Message:</label>
+          <textarea name="message" required></textarea>
 
-    <!-- Form Inputs. Each input must have a name="" attribute -->
-    <label class="name">Name:</label>
-    <input class="name" type="text" name="name" required><br>
-    <label>Email:</label>
-    <input type="email" name="email" required><br>
-    <textarea name="message" required placeholder="Message.."></textarea>
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-    <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;"><br>
+          <!-- Custom Confirmation / Success Page -->
+          <input type="hidden" name="redirect" value="https://mihaii.com/send">
 
-    <!-- Custom Confirmation / Success Page -->
-    <input type="hidden" name="redirect" value="https://mihaii.com/send.html">
+          <div class="align-submit">
+            <button class="submit" type="submit">Submit Form</button>
+          </div>
 
-    <div id="submit-container">
-      <button type="submit" id="submit">Submit Form</button>
+        </form>
+      </div>
+      <div class="sect1">
+        <p class=asoc>devMihai Contact:</p>
+        <div>
+        <p>Romania</p>
+        </div>
+        <br>
+        <p>Email: <a href="mailto:devmihai.contact@gmail.com" id="emailto">devmihai.contact@gmail.com</a></p>
+        <br>
+        <div class="social-cont">
+          <a href="https://www.youtube.com/channel/UCRqZ_DSDQsGox7sdjchMaxQ">
+            <div class="facebook">
+              <!--facebook-->
+              <svg class="social" viewBox="0 -7 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Youtube-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-200.000000, -368.000000)" fill="#CE1312"> <path d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z" id="Youtube"> </path> </g> </g> </g></svg>
+              <p>devMihai</p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
     </div>
-</form>
   </div>
 </div>
 
@@ -362,13 +352,46 @@ I place great emphasis on communication and transparency, so that the final resu
         <p class="p">In work!</p>
         <p class="p">Date: 16.06.2025</p><br><br><br><br><br><br><br>-->
 
-    <script src="action.js" defer></script>
-
-    <!--<script src="animation.js" defer></script>-->
-
     <br><br>
+    <div class="wrapper">
+        <div class="item item1">#devMihai</div>
+        <div class="item item2">#Designer</div>
+        <div class="item item3">#Frontend</div>
+        <div class="item item4">#Developer</div>
+        <div class="item item5">#Backend</div>
+        <div class="item item6">#Freelancer</div>
+        <div class="item item7">#Architect</div>
+        <div class="item item8">#Engineer</div>
+    </div>
+
+
+    <script src="action.js" defer></script>
+    <script src="projects.js" defer></script>
+    <script src="animation.js" defer></script>
+    <!--<script src="animation.js" defer></script>-->
     <footer>
-      <p>© 2025 devMihai. All rights reserved.</p>
+        <div class="footer">
+            <div class="up-footer">
+                <div class="program-container">
+                    <b>Program:</b>
+                    <div>
+                        <p>Monday - Thursday: 8<sup>00</sup> - 20<sup>00</sup></p>
+                        <p>Friday: 8<sup>00</sup> - 16<sup>00</sup></p>
+                    </div>
+                </div>
+                <div class="contact-footer">
+                    <b>Contact</b>
+                    <p>Email: devmihai.contact@gmail.com</p>
+                </div>
+            </div>
+    
+            <div class="down-footer">
+                <p>©2025 devMihai. All rights reserved.</p>
+    
+            </div>
+        </div>
     </footer>
 </body>
 </html>
+
+<!--(4, 27, 41)-->

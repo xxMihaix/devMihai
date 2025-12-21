@@ -19,6 +19,12 @@ body{
 p{
     margin: 0px;
 }
+
+.logoc{
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
 /****************PC NAVBAR******************/
 
 #inv-nav{
@@ -135,7 +141,7 @@ p{
 #logo2{
     font-size: 25px;
     font-weight: bold;
-    color: rgb(207, 6, 207);
+    color: rgb(2, 99, 156);
 }
 
 
@@ -278,7 +284,7 @@ p{
 
 
 footer{
-    background-color: rgb(143, 4, 143);
+    background-color: rgb(2, 99, 156);
     text-align: center;
     color: white;
     font-weight: bold;
@@ -341,6 +347,17 @@ footer{
     padding: 10px 35px;
     border-radius: 500px;
     border: none;
-    background: rgb(168, 1, 168);
+    background: rgb(2, 99, 156);
     cursor:pointer;
+}
+
+
+.logoc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lgo{
+    height: 45px;
 }

@@ -58,28 +58,64 @@ buttons.forEach((button) => {
   })
 })
 
-let btn1 = [
-  document.getElementById('btn1'),
-  document.getElementById('btn3')
+let acasa = [
+  document.getElementById('acasa1'),
+  document.getElementById('acasa2')
 ]
 
-let btn2 = [
-  document.getElementById('btn2'),
-  document.getElementById('btn4')
+let desprenoi = [
+  document.getElementById('desprenoi1'),
+  document.getElementById('desprenoi2'),
+  document.getElementById('desprenoi3')
 ]
 
-btn1.forEach(btn => {
+let contact = [
+  document.getElementById('contact1'),
+  document.getElementById('contact2'),
+  document.getElementById('contact3')
+]
+
+acasa.forEach(btn => {
   btn.addEventListener('click', function() {
-    const offset = document.getElementById('all-projects-container').getBoundingClientRect().top + window.pageYOffset -100;
+    const offset = document.getElementById('acasa').getBoundingClientRect().top + window.pageYOffset -100;
     window.scrollTo({ top: offset, behavior: 'smooth'});
   })
 })
 
-btn2.forEach(btn => {
-  btn.addEventListener('click', function(){
-    const offset2 = document.getElementById('all-contact-container').getBoundingClientRect().top + window.pageYOffset -100;
-    window.scrollTo({ top: offset2, behavior:'smooth' })
+desprenoi.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const offset = document.getElementById('center-all1').getBoundingClientRect().top + window.pageYOffset -160;
+    window.scrollTo({ top: offset, behavior: 'smooth'});
   })
+})
+
+contact.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const offset = document.getElementById('center-all3').getBoundingClientRect().top + window.pageYOffset -160;
+    window.scrollTo({ top: offset, behavior: 'smooth'});
+  })
+})
+
+const analyticBtn = document.getElementById('analytic');
+const analyticContainer = document.getElementById('all-analytic-container');
+const analyticClose = document.getElementById('close');
+
+analyticBtn.addEventListener('click', function(){
+  analyticContainer.classList.add('active');
+})
+
+analyticClose.addEventListener('click', function(){
+  analyticContainer.classList.remove('active');
+})
+
+document.getElementById('logo-container').addEventListener('click', function(){
+  const offset = document.getElementById('acasa').getBoundingClientRect().top + window.pageYOffset -100;
+  window.scrollTo({ top: offset, behavior: 'smooth'});
+})
+
+document.getElementById('logo-container2').addEventListener('click', function(){
+  const offset = document.getElementById('acasa').getBoundingClientRect().top + window.pageYOffset -100;
+  window.scrollTo({ top: offset, behavior: 'smooth'});
 })
 
 /////////////////////////////////////////
@@ -116,8 +152,29 @@ document.getElementById('btnn8').addEventListener('click', function() {
   window.location.href = 'https://en.wikipedia.org/wiki/MySQL';
 })
 
-/////////////////////////////////////////
+//FQA
 
+const questions = document.querySelectorAll('.quest-question');
+const answers = document.querySelectorAll('.quest-answer');
+
+questions.forEach((question, index) => {
+    question.addEventListener('click', () => {
+        // Toggle clasa doar pentru elementul selectat
+        question.classList.toggle('active');
+        answers[index].classList.toggle('active');
+
+        // Scoate active de la toate celelalte
+        questions.forEach((q, i) => {
+            if (i !== index) q.classList.remove('active');
+        });
+        answers.forEach((a, i) => {
+            if (i !== index) a.classList.remove('active');
+        });
+    });
+});
+
+/////////////////////////////////////////
+/*
 document.getElementById('ePlantsSite').addEventListener('click', function(){
   window.location.href = 'https://eplants.mihaii.com/';
 })
@@ -209,13 +266,8 @@ left.addEventListener('click', function() {
   }, 400);
 })
 
-
 })
-
-
-
-
-
+*/
 
 
 
