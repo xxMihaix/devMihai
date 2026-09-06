@@ -483,7 +483,7 @@ p{
 }
 
 .video{
-    filter: brightness(0.4);
+    filter: brightness(0.8);
     position: absolute;
     display: block;
     top: 50%;

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
   {id: 2, title: 'MSD', link: 'https://msd.mihaii.com/',des: 'A nonprofit association founded on May 16, 2024, dedicated to supporting children in need and communities in disadvantaged areas. Its mission is to bring positive change.', image: 'ProjectsImg/msd.png'},
   {id: 3, title: 'Profinex', link: 'https://profinex.mihaii.com/',des: 'A website created for a client to present the offered services in a modern way, including a contact email address.', image: 'ProjectsImg/Profinex1.jpg'},
   {id: 4, title: 'ePlants', link: 'https://eplants.mihaii.com/',des: 'A portfolio showcasing various applications, from local JSON functions to games like “Guess the Number” and scroll animations.', image: 'ProjectsImg/ePlants1.jpg'},
-  {id: 5, title: 'mihaii.com', link: 'https://mihaii.com/',des: 'Archive of the old website, looks like.', image: 'ProjectsImg/creator.png'},
+  {id: 5, title: 'Last Version', link: 'https://dev.mihaii.com/',des: 'Archive of the old website, looks like.', image: 'ProjectsImg/creator.png'},
   {id: 6, title: 'Database', link: 'https://online-nx41.onrender.com/login',des: 'A project dedicated to server-based websites (Node.js) that can send and manage information in a database.', image: 'ProjectsImg/online.png'},
   {id: 7, title: 'Your Project!', link: '',des: 'By collaborating with us, you benefit from free promotion on our website.', image: 'ProjectsImg/soon.png'}
 ];

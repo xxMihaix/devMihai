@@ -18,7 +18,7 @@
 
 <body>
   <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="pvbTRIC2vLZSn26e-xf_I";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=()=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="pvbTRIC2vLZSn26e-xf_I";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
   <div class="bodyy" id="bdy"></div>
   <!-- Google tag (gtag.js) -->
@@ -63,7 +63,7 @@
 <!-- Navbar -->
 <div class="header-container" id="acasa">
   <!-- Video ca fundal -->
-  <video src="Images/HeroVideooo.mp4" video.playbackRate=0.2; class="video" autoplay muted loop playsinline></video>
+  <video src="Images/heroVid.mp4" video.playbackRate=0.2; class="video" autoplay muted loop playsinline></video>
 
   <!-- Text și butoane peste video -->
   <div class="principal-text">
@@ -126,7 +126,7 @@ adapted to the needs of each client.
 
 
     <div id="cont" class="hidden">
-  <p id="languages">Limbaje:</p>
+  <p id="languages">Languages:</p>
   <div id="wrapper">
     <i id="leftBtn" class="fa-solid fa-angle-left"></i>
     <ul id="carousel">
@@ -178,6 +178,8 @@ adapted to the needs of each client.
         <p class="description">A database that stores data in flexible, JSON-type documents, facilitating the management of large, unstructured, and constantly evolving data sets.</p>
         <button id="btnn6">Info <span>↗</span></button>
       </li>
+
+      <!--
       <li class="card">
         <div class="img-container">
           <img src="Images/php.jpg" class="imagess" />
@@ -194,6 +196,7 @@ adapted to the needs of each client.
         <p class="description">A relational database management system used to efficiently store and organize a website's data.</p>
         <button id="btnn8">Info <span>↗</span></button>
       </li>
+    -->
     </ul>
     <i id="rightBtn" class="fa-solid fa-angle-right"></i>
   </div>
